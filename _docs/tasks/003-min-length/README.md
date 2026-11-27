@@ -1,6 +1,6 @@
 # 메모 최소 길이 2자
 
-상태: 스펙 준비·구현 전.
+상태: 코드 구현, 단위 테스트·로컬 직접 API 거절(400) 확인 완료. DB 연결 상태의 저장 성공(201), 화면 확인, 배포 확인은 남아 있다(verification.md).
 
 [PRD](PRD.md) → [스펙](specs/behavior.md) → [검증](verification.md) → [회고](retrospective.md).
 
