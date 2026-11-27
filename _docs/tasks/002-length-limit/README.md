@@ -1,6 +1,6 @@
 # 메모 최대 길이 20자
 
-상태: 스펙 준비·구현 전.
+상태: 코드 구현, 단위 테스트·로컬 직접 API 요청 확인 완료. 화면 확인과 배포 확인은 남아 있다(verification.md).
 
 [PRD](PRD.md) → [스펙](specs/behavior.md) → [검증](verification.md) → [회고](retrospective.md).
 

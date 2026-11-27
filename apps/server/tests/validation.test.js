@@ -8,3 +8,13 @@ test('입력 검증: 문자열·공백·경계·trim', () => {
   assert.equal(validate('a'.repeat(RULES.maxLength)).text.length,RULES.maxLength)
   assert.ok(validate('a'.repeat(RULES.minLength-1)).error)
 })
+test('002 최대 길이 20자: 0·1·20·21자 경계 (한글·영문)', () => {
+  assert.equal(RULES.maxLength, 20)
+  assert.ok(validate('').error)
+  assert.equal(validate('가').text, '가')
+  assert.equal(validate('a').text, 'a')
+  assert.equal(validate('가'.repeat(20)).text.length, 20)
+  assert.equal(validate(`  ${'a'.repeat(20)}  `).text.length, 20)
+  assert.ok(validate('가'.repeat(21)).error)
+  assert.ok(validate('a'.repeat(21)).error)
+})
